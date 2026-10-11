@@ -1,0 +1,54 @@
+name: Mouse hardware test / bug
+description: Report actual OMNI behavior for your exact mouse and connection.
+title: "[Hardware test] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for testing. Only post public technical results: no personal logs, serials or full USB paths. Generic OpenMouse macros are not included yet."
+  - type: input
+    id: model
+    attributes:
+      label: Exact mouse model
+      placeholder: "For example: Razer Basilisk V3"
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection used
+      options:
+        - Wired USB
+        - 2.4 GHz receiver
+        - Bluetooth
+        - Other / unsure
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows version and OMNI build
+      placeholder: "Windows 11; SCORPION EXPIREMENTAL 1 OpenMouse preview"
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Detection, DPI and Hz results
+      description: "What did DETECT DEVICES show? Which values did you SAVE? Did physical DPI and the five-second Hz test change? Include exact errors and steps."
+    validations:
+      required: true
+  - type: dropdown
+    id: persistence
+    attributes:
+      label: After closing OMNI and power-cycling the mouse
+      options:
+        - Not tested
+        - Both DPI and Hz stayed as set
+        - DPI stayed but Hz did not
+        - Hz stayed but DPI did not
+        - Neither stayed / unsure
+  - type: textarea
+    id: additional
+    attributes:
+      label: Other results
+      description: "Optional: reconnection, sleep/resume, X11 macros, or anything else you tested."
