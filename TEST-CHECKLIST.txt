@@ -1,0 +1,29 @@
+OMNI CONTROL - experimental hardware test
+
+Install: Extract All, close old OMNI, run INSTALL.exe from the outer folder.
+Send back Windows version, exact mouse model/connection, what worked, and exact errors.
+
+After a problem, click SEND LOGS and confirm the receiver. Share the received report ID with the owner.
+Online receiving is not activated in this build. Nothing is uploaded automatically.
+
+Attack Shark X11 (tested adapter):
+1. Edit settings and SAVE Test to store and activate all edits; close/open and preview Test.
+2. Check disconnected/reconnected by removing/reinserting dongle; try REFRESH.
+3. Test DPI/buttons/macros and 125/1000 Hz. Current settings are not read back for X11.
+
+Razer Basilisk V3 / Viper V3 Pro (experimental, not OMNI hardware-verified):
+1. Select the Razer and click DETECT DEVICES; report actual X/Y DPI and Hz, or exact error.
+2. If read succeeds, try 800 and 1600 DPI; check pointer response. SAVE activates both DPI axes and the chosen Hz together.
+3. Select 125 then 1000 Hz, SAVE each time and TEST RATE for each. Move continuously with OMNI focused.
+4. Close OMNI and power-cycle; DETECT DEVICES again to check persistence.
+5. Razer profiles, macros and stage tables are not in this beta. Wireless Viper high rates need hardware verification.
+If busy, close Synapse and retry. If Windows exposes no feature channel, send the error.
+
+Logitech wired: DETECT DEVICES, then SAVE DPI/Hz. PRESETS & BUTTONS edits five stages and simple button actions.
+Keep current preserves existing macros. Custom Logitech macro recording and RGB are not included.
+Enable onboard memory mode in G HUB, select the mouse and DETECT DEVICES. Close G HUB before SAVE.
+Test 800/1600 DPI and 125/1000 Hz; verify after restarting the mouse. Test presets and copy/paste too.
+SAVE backs up the original active profile locally and checks full memory plus live values.
+If a write fails, stop and report the exact error. Physical behavior remains unverified until tested.
+Shared receiver IDs are not enough to name the paired model.
+X85 keyboard: detection only. No mouse settings are sent from its view.
